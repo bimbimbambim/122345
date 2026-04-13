@@ -3,7 +3,10 @@ from fastapi.middleware.cors import CORSMiddleware
 from .core.database import Base, engine
 from .api.routes import auth, users, generations, payments, admin, styles
 
-Base.metadata.create_all(bind=engine)
+try:
+    Base.metadata.create_all(bind=engine)
+except Exception as e:
+    print(f"[WARNING] DB init failed: {e}")
 
 app = FastAPI(title="LENSY AI API", version="1.0.0")
 

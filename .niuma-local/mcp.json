@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "niuma-local-13898": {
+      "serverUrl": "http://127.0.0.1:13898/mcp",
+      "port": 13898
+    }
+  }
+}

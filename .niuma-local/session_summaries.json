@@ -1,0 +1,10 @@
+[
+  {
+    "id": 1776085549652,
+    "title": "Ситуация",
+    "summary": "## Ситуация\n\nНа компьютере **не установлены Docker и Python**, поэтому backend локально не запустить.\n\n**Варианты:**\n\n### 1. Backend работает на удалённом сервере?\nЕсли у тебя уже есть развёрнутый backend (Railway, VPS и т.д.) — просто укажи его URL, я обновлю настройки админки.\n\n### 2. Установить Docker Desktop\nСкачай с [docker.com/desktop](https://www.docker.com/products/docker-desktop/) и после установки запусти:\n```bash\ndocker compose up -d postgres redis backend\n```\nТогда backend поднимется автоматически на `localhost:8000`.\n\n### 3. Установить Python\nСкачай Python 3.11 с [python.org](https://python.org), затем запущу backend через `uvicorn`.\n\n**Пароль для панели готов:** `lensy-admin-2024` (записан в `.env`)",
+    "timestamp": "2026-04-13T13:05:49.652Z",
+    "rounds": 2,
+    "historyFile": "c:\\Users\\Dima\\Desktop\\3333\\.niuma-local\\history\\2026-04-13_16-03-23.md"
+  }
+]
